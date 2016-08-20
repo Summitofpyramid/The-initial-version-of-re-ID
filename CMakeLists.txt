@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( Test )
+find_package( OpenCV REQUIRED )
+add_executable( VIPeR main.cpp  descriptor.h descriptor.cpp histdescriptor.h  histdescriptor.cpp ReidDescriptor.h ReidDescriptor.cpp)
+target_link_libraries(VIPeR ${OpenCV_LIBS} )
